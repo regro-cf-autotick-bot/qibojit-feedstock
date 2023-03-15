@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - numba >=0.51.0
     - scipy
     - psutil
-    - python >=3.7
-    - qibo >=0.1.9
+    - python >=3.8
+    - qibo >=0.1.11
 
 test:
   imports:
