@@ -19,12 +19,13 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - poetry
   run:
     - numba >=0.51.0
     - scipy
     - psutil
     - python >=3.8
-    - qibo >=0.1.13
+    - qibo >=0.2.0
 
 test:
   imports:
