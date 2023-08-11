@@ -1,5 +1,5 @@
 {% set name = "qibojit" %}
-{% set version = "0.0.12" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/qiboteam/qibojit/archive/v{{ version }}.tar.gz
-  sha256: 8e15eab3aaac8bd9f78987e372bcc53ef52763f77ad93dd34332262c90940dc6
+  sha256: ed1ef3528e0e720cdf5243cd336ea0f4dee336a81633fae2602f8fe960cb1d9d
 
 build:
   number: 0
@@ -19,12 +19,13 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - poetry
   run:
     - numba >=0.51.0
     - scipy
     - psutil
     - python >=3.8
-    - qibo >=0.1.13
+    - qibo >=0.2.0
 
 test:
   imports:
