@@ -25,7 +25,7 @@ requirements:
     - scipy
     - psutil
     - python >=3.9,<3.12
-    - qibo >=0.2.3
+    - qibo >=0.2.5
 
 test:
   imports:
