@@ -11,23 +11,25 @@ source:
   sha256: 17849db49d51ccadf12e4606da08ce94f24924074bf0dc2c9fc87863025a906c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - poetry
   run:
     - numba >=0.51.0
     - scipy
     - psutil
-    - python >=3.9,<3.12
+    - python >={{ python_min }},<3.12
     - qibo >=0.2.5
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - qibojit
 
